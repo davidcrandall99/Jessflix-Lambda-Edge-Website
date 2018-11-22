@@ -1,0 +1,169 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+h1, h2 {
+    font-family: 'Shadows Into Light', sans-serif;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+div {
+    box-sizing: border-box;
+}
+#banner {
+    display: block;
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+    padding: 24px;
+    background-color:#fff;
+    font-family: 'Shadows Into Light', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+#banner img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: -20px;
+}
+#banner h1 {
+    text-align: center;
+    font-size: 2.2em;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 158px;
+}
+#banner a.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 110px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width:1200px;
+    padding: 25px 12px 25px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+[class*="col-"] {
+    margin: 10px;
+}
+.card {
+    width: calc(32% - 20px);
+    display: inline-block;
+    padding: 20px;
+    background: #fff;
+    margin: 10px;
+    vertical-align:top;
+}
+.card .title {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em
+}
+
+.card img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.btn {
+    padding: 10px;
+    float: left;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(248, 77, 134);
+}
+.btn:hover {
+    background-color:rgb(255, 87, 154);
+}
+
+#video iframe {
+    width: 100% !important;
+}
+h1.title {
+    float: left;
+    width: calc(100% - 130px);
+}
+#video .btn.see-all {
+    float: right;
+    position: relative;
+    top: 55px;
+}
+
+@media(max-width: 772px) {
+    .card {
+        width: calc(50% - 30px);
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media(max-width: 550px) {
+
+    #banner img {
+        margin: 0;
+        width: 30%;
+    }
+    #banner h1 {
+        text-align: left;
+        font-size: 2.2em;
+        position: absolute;
+        width: auto;
+        top: 50%;
+        left: 30%;
+        margin-top: -30px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }    
+    h2 {
+        font-size: 1.5em;
+    }
+    #banner a.btn {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-left: 110px;
+        margin-top: -23px;
+        float: right;
+        text-align: center;
+        display: block;
+        left: auto;
+        width: 130px;
+    }
+    .card {
+        width: calc(100% - 30px);
+    }
+
+    h1.title {
+        float: left;
+        width: 100%;
+    }
+    #video .btn.see-all {
+        float: left;
+        margin-bottom: 31px;
+        position: static;
+    }
+}
