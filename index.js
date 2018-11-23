@@ -93,8 +93,7 @@ exports.handler = (event, context, callback) => {
                 callback(null, response);
                 getpage.removeAllListeners();
             })
-            getpage.query(uri);
-            
+            getpage.query(uri);   
         }
     }
 };

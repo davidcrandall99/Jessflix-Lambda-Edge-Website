@@ -8,6 +8,7 @@ const params = {
 const Events = require("events");
 class Scanner extends Events { 
     scan() {
+        console.log("scanning for all data in dynamodb table ", params.TableName);
         dynamodb.scan(params, (err, data) => {
             if (err) {
                 this.emit("error", JSON.stringify(err, null, 2));

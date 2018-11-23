@@ -22,7 +22,5 @@ let detectSlash = (uri) => {
         return true;
     }
 }
-var slash = detectSlash("/index.jpg");
-console.log(slash);
 
 module.exports = detectSlash;

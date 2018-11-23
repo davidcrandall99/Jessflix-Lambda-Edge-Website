@@ -13,7 +13,7 @@ let videoList = (data) => {
         let id = data[i].id;
 
         content = content + `<div class="card" id=${id}>
-            <a href="${link}" class="thumbnail">
+            <a href="/${link}/" class="thumbnail">
                 <img src="${thumbnail}" alt="Thumbnail for The Nun Review (spoilers)" />
 
             </a>
