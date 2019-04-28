@@ -76,7 +76,6 @@ exports.handler = (event, context, callback) => {
             getpage.on("scan", (data) => {
                 var template = require('./templates/videopage');
                 var output = template(data);
-                //console.log(data)
                 var response = {
                     status: '200',
                     body: output
