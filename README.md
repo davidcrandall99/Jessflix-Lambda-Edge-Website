@@ -13,7 +13,7 @@ You're welcome to use this code for your own site; but this function on its own 
 1. You'll need to setup a cloudfront distro and set behaviors that will trigger this lambda function on *origin* request. This will allow the response to cache at the cloudfront edge, and will allow the site to perform faster.
 2. You'll need a S3 bucket, or something for file storage. The logo images referenced by these templates are in S3.
 3. You'll need your own dynamodb table with data. In the code you'll find an array of sample data, so you can see the structure of the data being queried. You'll also need to make sure the lambda function has read access to dynamodo via IAM polocies.
-4. You'll need something in place that populates dynamodb with data; I used a seperate lambda function that gets content from YouTube, and stores it as page data in DynamoDB.
+4. You'll need something in place that populates dynamodb with data; I used a seperate lambda function that gets content from YouTube, and stores it as page data in DynamoDB. You can see that here: https://github.com/davidcrandall99/YouTube-to-DynamoDB
 
 ## The story
 
