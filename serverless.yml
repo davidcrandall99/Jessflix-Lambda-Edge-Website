@@ -9,10 +9,3 @@ package:
 functions:
   jessflix:
     handler: index.handler
-    events:
-      - http:
-          path: /
-          method: get
-      - http:
-          path: /{any+}
-          method: get
