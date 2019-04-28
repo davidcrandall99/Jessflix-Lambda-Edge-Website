@@ -3,7 +3,9 @@ service: jessflix-frontend
 provider:
   name: aws
   runtime: nodejs8.10
-
+package:
+  exclude:
+    - mockups/**
 functions:
   jessflix:
     handler: index.handler
