@@ -7,6 +7,14 @@ Basically, two things: Connect to DynamoDB to get data, and output HTML using te
 
 The templates and components are in their respective directories.
 
+## A few prerequisites
+You're welcome to use this code for your own site; but this function on its own won't do much. To get it to work, you'll need to do a few things:
+
+1. You'll need to setup a cloudfront distro and set behaviors that will trigger this lambda function on *origin* request. This will allow the response to cache at the cloudfront edge, and will allow the site to perform faster.
+2. You'll need a S3 bucket, or something for file storage. The logo images referenced by these templates are in S3.
+3. You'll need your own dynamodb table with data. In the code you'll find an array of sample data, so you can see the structure of the data being queried. You'll also need to make sure the lambda function has read access to dynamodo via IAM polocies.
+4. You'll need something in place that populates dynamodb with data; I used a seperate lambda function that gets content from YouTube, and stores it as page data in DynamoDB.
+
 ## The story
 
 My wife, Jessica, has a youtube channel, https://youtube.com/jessflix , and it has a few videos started getting a good amount of views. So, I decided to help expand her presence by getting a website up and running. On the flipside, I didn't want Jess to have to constantly update her website with content every time she uploads a video.
